@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "noUnusedLocals": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "strictFunctionTypes": true,
+      "strictPropertyInitialization": true,
+      "module": "commonjs",
+      "target": "es5",
+      "lib": ["es2016","dom"],
+      "declaration": true,
+      "sourceMap": true,
+      "outDir": "./dist"
+    },
+    "include": [
+      "src/THREEAR.ts"
+    ],
+    "typedocOptions": {
+      "mode": "file",
+      "out": "docs",
+      "externalPattern": "src/**/**.ts",
+      "exclude": ["src/artoolkit/**/**.ts", "src/BaseMarker.ts"]
+    }
+}
